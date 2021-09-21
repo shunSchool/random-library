@@ -3,24 +3,14 @@ document.getElementById("calc-btn").addEventListener("click", buttonHandler);
 
 function buttonHandler() {
   // Input
-  let num1 = +document.getElementById("num1-in").value;
-  let num2 = +document.getElementById("num2-in").value;
-  let num3 = +document.getElementById("num3-in").value;
+  let aVal = +document.getElementById("a-in").value;
+  let bVal = +document.getElementById("b-in").value;
+  let hVal = +document.getElementById("h-in").value;
   // Output
-  document.getElementById("output").innerHTML = sum(num1, num2);
+  document.getElementById("output").innerHTML = (0.5 * aVal + bVal * hVal);
 }
 //Functions
 
 function area(a, b, h) {
-
-}
-
-function calculate() {
-  //get inputs
-  let num1 = +inputEl1.value;
-  let num2 = +inputEl2.value;
-  let num3 = +inputEl3.value;
-
-  //calculate & output
-  HTMLOutputElement.innerHTML = formulaFunction(num1, num2, num3);
+  return 0.5 * (a + b) * h;
 }
